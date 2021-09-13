@@ -1,17 +1,23 @@
 body{
-    background: #E7ECEE;
+    background: #012340;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    
     margin: 0%;
+    
 }
 .encabezado{
     background-color: #A60522;
     height: 200px;
     width: 100%;
-    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.apartado{
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -21,7 +27,7 @@ body{
     margin-left: 40px;
     padding: 10px;
     width: 30%;
-    height: 100%;
+    
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -31,13 +37,13 @@ body{
 }
 h1{
     font-family: "consolas";
-    font-size: 2em;
+    font-size: 1.6em;
     margin: 0%;
     color: #E7ECEE;
 }
 h2{
     font-family: "consolas";
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0%;
     color: #E7ECEE;
 }
@@ -52,3 +58,53 @@ h3{
 .titulo{
     font-size: 2.7em;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .opcion {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .menu:hover .opcion {
+    background-color: red;
+  }
+  
+  li.menu {
+    display: inline-block;
+  }
+  
+  .contenido-opcion {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .contenido-opcion a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .menu:hover .contenido-opcion {
+    display: block;
+  }
