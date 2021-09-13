@@ -1,5 +1,5 @@
 body{
-    background: #012340;
+    background: #ffffff;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -60,51 +60,58 @@ h3{
 }
 ul {
     list-style-type: none;
+    font-family: "consolas";;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: none;
+   
   }
   
-  li {
+li {
     float: left;
-  }
+}
   
-  li a, .opcion {
+li a, .opcion {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+    transition: 0.5s;
+}
   
-  li a:hover, .menu:hover .opcion {
-    background-color: red;
-  }
+li a:hover, .menu:hover .opcion {
+    
+    border-bottom: 3px solid;
+    border-color: beige;
+}
   
-  li.menu {
+li.menu {
     display: inline-block;
-  }
+}
   
-  .contenido-opcion {
+.contenido-opcion {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #2277B8;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .contenido-opcion a {
+.contenido-opcion a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+}
+  
+.contenido-opcion a:hover {
+    background-color: #f1f1f1;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .menu:hover .contenido-opcion {
+.menu:hover .contenido-opcion {
     display: block;
-  }
+}
