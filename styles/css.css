@@ -2,9 +2,12 @@ body{
     background: #ffffff;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: 0%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     
 }
 .encabezado{
@@ -114,4 +117,35 @@ li.menu {
   
 .menu:hover .contenido-opcion {
     display: block;
+}
+.abajo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    width: 100%;
+    height: 150px;
+    background-color: #2277B8;
+}
+.github{
+    background: url(25231.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    margin: 0px;
+    transition: 0.5s;
+}
+.redes{
+    
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.github:hover{
+    width: 40px;
+    height: 40px;
 }
