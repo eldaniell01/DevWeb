@@ -9,7 +9,7 @@ button{
     width: 120px;
     height: 30px;
     padding: 0%;
-    margin: 0%;
+    margin: 10px;
     border: 0px;
     transition: 0.5s;
 }
@@ -21,4 +21,9 @@ p{
 }
 button:hover{
     background-color: #B5DFF5;
+}
+.event{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
