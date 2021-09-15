@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="C:\Users\danie\OneDrive\Documents\GitHub\DevWeb\styles\css.css">
 	<link rel="stylesheet" href="C:\Users\danie\OneDrive\Documents\GitHub\DevWeb\styles\estilos-ejercicios.css">
-	<title>Condicionales</title>
+    <title>Calculadora</title>
 </head>
 <body>
-	<section class="encabezado">
+    <section class="encabezado">
         <div class="apartado">
             <h1 class="titulo">EJERCICIOS JAVASCRIPT</h1>
             <div class="persona">
@@ -53,72 +53,7 @@
             </ul>
         </div>
     </section>
-	<p id="tipod"></p>
-	<p id="tipod2"></p>
-	<p id="tipod3"></p>
-	<p id="tipod4"></p>
-	<p id="tipod5"></p>
-	<p id="tipod6"></p>
-	<script>
-		// El condicional if es una estructura de control que nos permite tomar deciciones en base a condiciones que nosotros le asignamos.
-		// Esta es la forma que tenemos para que nuestra pagina web tome decisiones.
-
-// ----- Ejemplo de condicional:
-
-		/*
-			if (condicion) {
-				// Instrucciones que se ejecutaran si la condicion es VERDADERA (true).
-			}
-		*/
-
-// ----- Ejemplo de condicion
-		var edad = 18;
-		if (edad >= 18) {
-			document.getElementById('tipod').innerHTML = "Eres mayor de edad\n";
-		}
-		var edad = 17;
-		if (edad < 18) {
-			document.getElementById('tipod2').innerHTML = "Eres menor de edad\n";
-		}
-
-// ----- Condicional If else
-		if (edad >= 18){
-			document.getElementById('tipod3').innerHTML = "Eres mayor de edad\n";
-		} else {
-			document.getElementById('tipod3').innerHTML = "Eres menor de edad\n";
-		}
-
-// ----- Else if
-		var pais = 'Mexico';
-		if (pais == 'Mexico'){
-			document.getElementById('tipod4').innerHTML = "Eres mexicano\n";
-		} else if (pais == 'Colombia') {
-			document.getElementById('tipod4').innerHTML = "Eres colombiano\n";
-		} else if (pais == 'España') {
-			document.getElementById('tipod4').innerHTML = "Eres eres español\n";
-		} else {
-			document.getElementById('tipod4').innerHTML = "no eres nadie xD\n";
-		}
-
-// ----- Switch
-		var pais = 'Mexico';
-		switch (pais) {
-			case 'Mexico':
-				document.getElementById('tipod5').innerHTML = "Eres mexicano\n";
-				break;
-			case 'Argentina':
-				document.getElementById('tipod5').innerHTML = "Eres argentino\n";
-				break;
-			case 'Peru':
-				document.getElementById('tipod5').innerHTML = "Eres peruano\n";
-				break;
-			default:
-				document.getElementById('tipod5').innerHTML = "Eres nadie xD\n";
-				break;
-		}
-
-	</script>
-	<div class="centro">
+    <div class="centro">
         
     </div>
     <footer class="abajo">
