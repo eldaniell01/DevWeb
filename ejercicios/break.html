@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="C:\Users\danie\OneDrive\Documents\GitHub\DevWeb\styles\css.css">
+	<link rel="stylesheet" href="C:\Users\danie\OneDrive\Documents\GitHub\DevWeb\styles\estilos-ejercicios.css">
 	<title>Break y Continue</title>
 </head>
 <body>
+	<section class="encabezado">
+        <div class="apartado">
+            <h1 class="titulo">EJERCICIOS JAVASCRIPT</h1>
+            <div class="persona">
+                <H1>Alvaro Daniel Montepeque Monterroso</H1>
+                <h2>3090-16-4231</h2>
+                <h3>Desarrollo Web</h3>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="C:\Users\danie\OneDrive\Documents\GitHub\DevWeb\index.html">Home</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0)" class="opcion">Ejercicios</a>
+                    <div class="contenido-opcion">
+                        <a href="introduccion.html">Introducción</a>
+                        <a href="eventos.html">Eventos</a>
+                        <a href="variables.html">Variables</a>
+                        <a href="tiposDatos.html">Tipos de datos</a>
+                        <a href="operadores.html">Operadoares</a>
+                        <a href="condicionales.html">Condiciones</a>
+                        <a href="cicloFor.html">Ciclo For</a>
+                        <a href="cicloWhile.html">Ciclo While</a>
+                        <a href="break.html">Break</a>
+                        <a href="arreglos.html">Arreglos</a>
+                        <a href="funciones.html">Funciones</a>
+                        <a href="metodosArreglos.html">Métodos de arreglos</a>
+                        <a href="metodosCadenas.html">Métodos de cadenas</a>
+                        <a href="formularios.html">Formularios</a>
+                        <a href="index.html">Otro formulario</a>
+                        <a href="calculadora.html">Calculadora</a>
+                        <a href="objetos.html">Objetos</a>
+                        <a href="hoisting.html">Hoisting</a>
+                        <a href="localStorage.html">Local Storage</a>
+                        <a href="scope.html">Scope</a>
+                        <a href="this.html">This</a>
+                        <a href="tiempo.html">Tiempo</a>
+                        <a href="timing.html">Timing</a>
+                        <a href="dom/dom.html">Dom</a>
+                      </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+	<p id="tipod"></p>
 	<script>
 		var amigos = ['Alejandro', 'Cesar', 'Manuel', 'Luis'];
 
@@ -12,18 +61,26 @@
 		// Continue nos permite saltarnos a la siguiente ejecucion de un ciclo.
 
 		for (amigo in amigos) {
-			// document.write(amigos[amigo] + '<br>');
-			// if (amigos[amigo] == 'Cesar'){
-			// 	break;
-			// }
+			document.getElementById('tipod').innerHTML += amigos[amigo] +"<br>";
+			if (amigos[amigo] == 'Cesar'){
+				break;
+			}
 
 			if (amigos[amigo] == 'Alejandro'){
 				continue;
 			};
 
-			document.write(amigos[amigo] + '<br>');
+			document.getElementById('tipod').innerHTML += amigos[amigo] +"<br>";
 		}
 
 	</script>
+	<div class="centro">
+        
+    </div>
+    <footer class="abajo">
+        <div class="redes">
+            <a class="github" href="https://github.com/eldaniell01"></a>
+        </div>
+    </footer>
 </body>
 </html>
