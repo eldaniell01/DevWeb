@@ -48,3 +48,14 @@ input{
     height: 30px;
     width: auto;
 }
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+label{
+    font-family: "consolas";
+    font-size: 1.2em;
+}
