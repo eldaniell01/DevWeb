@@ -59,3 +59,44 @@ label{
     font-family: "consolas";
     font-size: 1.2em;
 }
+
+.terminos{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 20%;
+}
+
+.calcular{
+    text-align: center;
+    background-color: #2277B8;
+    box-shadow: 0px 0px 0px 0px;
+    width: 60px;
+    height: 30px;
+    padding: 0%;
+    margin: 10px;
+    border: 0px;
+    transition: 0.5s;
+}
+.numeros {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.operar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.escribir{
+    display: flex;
+   
+    justify-content: center;
+}

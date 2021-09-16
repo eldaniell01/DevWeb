@@ -11,7 +11,7 @@
 			error.style.display = 'block';
 			error.innerHTML += '<li>Por favor completa el nombre</li>';
 			console.log('Por favor completa el nombre');
-
+			document.getElementById('tipod').innerHTML += "Por favor completa el nombre";
 			e.preventDefault();
 		} else {
 			error.style.display = 'none';
@@ -23,7 +23,7 @@
 			error.style.display = 'block';
 			error.innerHTML += '<li>Por favor completa el correo</li>';
 			console.log('Por favor completa el correo');
-
+			document.getElementById('tipod2').innerHTML += "Por favor completa el correo";
 			e.preventDefault();
 		} else {
 			error.style.display = 'none';
@@ -35,7 +35,7 @@
 			error.style.display = 'block';
 			error.innerHTML += '<li>Por favor selecciona el sexo</li>';
 			console.log('Por favor completa el sexo');
-
+			document.getElementById('tipod3').innerHTML += "Por favor completa el sexo";
 			e.preventDefault();
 		} else {
 			error.style.display = 'none';
@@ -47,7 +47,7 @@
 			error.style.display = 'block';
 			error.innerHTML += '<li>Por favor acepta los terminos y condiciones</li>';
 			console.log('Por favor completa el terminos');
-
+			document.getElementById('tipod4').innerHTML += "Por favor completa el terminos";
 			e.preventDefault();
 		} else {
 			error.style.display = 'none';
