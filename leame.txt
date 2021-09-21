@@ -1,0 +1,1 @@
+cambiar las ubicaciones de los estilos dentro de los html de los ejercicios 
